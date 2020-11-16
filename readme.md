@@ -52,3 +52,8 @@ docker exec -it 92d7d60c4e44 /bin/bash
 ## Super User oluşturma
 
 python manage.py createsuperuser
+
+
+api endpoints
+http://localhost/api/v1/categories/
+http://localhost/api/v1/posts/
