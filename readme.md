@@ -31,7 +31,7 @@ web:
 
 cp .env.example .env
 make bundle && make build
-
+docker-compose up
 
 ### Çalıştırma
 Geliştirme ortamı (attach)
