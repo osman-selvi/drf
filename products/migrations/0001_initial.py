@@ -23,15 +23,15 @@ class Migration(migrations.Migration):
             ],
         ),
         migrations.CreateModel(
-            name='Post',
+            name='Product',
             fields=[
                 ('id', models.AutoField(primary_key=True, serialize=False)),
                 ('title', models.CharField(max_length=250)),
                 ('text', models.TextField()),
-                ('image', models.ImageField(upload_to='posts/')),
+                ('image', models.ImageField(upload_to='products/')),
                 ('created_at', models.DateTimeField(auto_now_add=True)),
                 ('updated_at', models.DateTimeField(auto_now=True)),
-                ('category', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='posts.Category')),
+                ('category', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='products.Category')),
             ],
         ),
     ]

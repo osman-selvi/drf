@@ -7,6 +7,10 @@ class CategoryViewSet(ModelViewSet):
     queryset = models.Category.objects.all()
     serializer_class = serializers.CategorySerializer
 
-class PostViewSet(ModelViewSet):
-    queryset = models.Post.objects.all()
-    serializer_class = serializers.PostSerializer
+class ProductViewSet(ModelViewSet):
+    queryset = models.Product.objects.all()
+    serializer_class = serializers.ProductSerializer
+
+class AboutViewSet(ModelViewSet):
+    queryset = models.About.objects.all()
+    serializer_class = serializers.AboutSerializer

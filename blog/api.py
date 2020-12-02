@@ -1,6 +1,6 @@
 from rest_framework import routers
-from posts import views
+from products import views
 
 router = routers.SimpleRouter()
 router.register(r'categories', views.CategoryViewSet)
-router.register(r'posts', views.PostViewSet)
+router.register(r'products', views.ProductViewSet)
