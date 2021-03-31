@@ -1,5 +1,5 @@
 # drf-boilerplate
-django rest framework kullanım için hazır araç gereç ve örnek bir blog uygulaması
+django rest framework kullanım için hazır araç gereç ve örnek bir admin uygulaması
 
 ## Neler var
 * Arkayüzde için django, django-rest-framework, postgresql
@@ -18,7 +18,7 @@ docker-compose.yml dosyası içerisinde 28.satırdaki port şu şekilde değişt
 web:
     image: drf-boilerplate:latest
     restart: on-failure
-    command: gunicorn --error-logfile /var/log/gunicorn-error-log --bind 0.0.0.0:8080 blog.wsgi
+    command: gunicorn --error-logfile /var/log/gunicorn-error-log --bind 0.0.0.0:8080 admin.wsgi
     volumes:
       - .:/code
     ports:

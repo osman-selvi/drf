@@ -21,7 +21,7 @@ services:
   web:
     image: drf-boilerplate:latest
     restart: on-failure
-    command: gunicorn --error-logfile /var/log/gunicorn-error-log --bind 0.0.0.0:8080 blog.wsgi
+    command: gunicorn --error-logfile /var/log/gunicorn-error-log --bind 0.0.0.0:8080 admin.wsgi
     volumes:
       - .:/code
     ports:

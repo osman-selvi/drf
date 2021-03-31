@@ -1,9 +1,14 @@
 from rest_framework import serializers
-from .models import Post, Category
+from .models import Post, Category, Company
 
 class CategorySerializer(serializers.ModelSerializer):
     class Meta:
         model = Category
+        fields = ('id', 'title', 'description', 'created_at', 'updated_at')
+
+class CompanySerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Company
         fields = ('id', 'title', 'description', 'created_at', 'updated_at')
 
 class PostSerializer(serializers.ModelSerializer):

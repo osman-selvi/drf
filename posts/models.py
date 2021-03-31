@@ -10,6 +10,16 @@ class Category(models.Model):
     def __str__(self):
         return self.title
 
+class Company(models.Model):
+    id = models.AutoField(primary_key=True)
+    title = models.CharField(max_length=250)
+    description = models.CharField(max_length=500)
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+
+    def __str__(self):
+        return self.title
+
 class Post(models.Model):
     id = models.AutoField(primary_key=True)
     title = models.CharField(max_length=250)

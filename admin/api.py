@@ -3,4 +3,5 @@ from posts import views
 
 router = routers.SimpleRouter()
 router.register(r'categories', views.CategoryViewSet)
+router.register(r'companies', views.CompanyViewSet)
 router.register(r'posts', views.PostViewSet)
