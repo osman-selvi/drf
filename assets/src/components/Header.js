@@ -12,7 +12,7 @@ class Header extends Component {
     }
 
     componentDidMount() {
-        const url = "http://localhost/api/v1/categories/";
+        const url = "http://localhost:8888/api/v1/categories/";
         fetch(url)
             .then(response => response.json())
             .then(data => {

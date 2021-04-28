@@ -9,7 +9,7 @@ class CategorySerializer(serializers.ModelSerializer):
 class CompanySerializer(serializers.ModelSerializer):
     class Meta:
         model = Company
-        fields = ('id', 'title', 'description', 'created_at', 'updated_at')
+        fields = ('id', 'title', 'description', 'project_type', 'created_at', 'updated_at')
 
 class PostSerializer(serializers.ModelSerializer):
     category = serializers.PrimaryKeyRelatedField(queryset=Category.objects.all())
